@@ -1,0 +1,549 @@
+/*-----------------------------------------------------------------------------
+
+	-	ei-slider Slider Captions -
+
+		Screen Stylesheet
+
+version:   	1.4.5
+date:      	23/01/15
+author:		magikcommerce
+email:      support@magikcommerce.com
+website:   	http://www.magikcommerce.com/
+-----------------------------------------------------------------------------*/
+
+
+
+/*************************
+	-	CAPTIONS	-
+**************************/
+
+#magik-slideshow {
+	border: none;
+	padding: 0;
+	margin: auto;
+	width: 100%;
+	clear: both;
+}
+.slider.ei-slider {
+	padding: 0;
+	z-index: 5;
+}
+.ei-slider {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden
+}
+.ei-slider-loading {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+	background: #161616;
+	color: #fff;
+	text-align: center;
+	line-height: 400px;
+}
+.ei-slider-large {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	list-style: none;
+	margin: 0 !important;
+}
+.ei-slider-large li {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+.ei-slider-large li img {
+	width: auto!important;
+	max-width: none;
+}
+.ei-title {
+	position: absolute;
+	right: 50%;
+	margin-right: 5%;
+	top: 23%;
+	width: 550px
+}
+.ei-title h2, .ei-title h3 {
+	text-align: right;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.ei-title h2, .ei-title h2 a {
+	color: #000000;
+	font-size: 60px;
+	font-weight: 900;
+	margin-top: 10px;
+	line-height: 50px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif
+}
+.ei-title h1, .ei-title h1 a {
+	color: #fff;
+	font-size: 60px;
+	font-weight: 900;
+	margin-top: 10px;
+	line-height: 50px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	text-align: right;
+	text-shadow: 0px 3px 6px #333
+}
+.ei-title h6, .ei-title h6 a {
+	color: #fff;
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 10px;
+	line-height: 50px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	text-align: right
+}
+.ei-title p {
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	text-align: right;
+	margin-top: 7px
+}
+.ei-title h5 {
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
+	text-align: center;
+	margin-top: 10px;
+	padding-left: 35px
+}
+.ei-title .center {
+	display: block!important;
+	float: none!important;
+	margin-left: 160px;
+	margin-top: 10px
+}
+.ei-title .shop-btn {
+	background: url(../image/slider-btn-bg.png) no-repeat top left;
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+	width: 213px;
+	height: 68px;
+	text-align: center;
+	padding-top: 27px;
+	display: block;
+	float: right;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px
+}
+.ei-title h3, .ei-title h3 a {
+	font-size: 40px;
+	line-height: 50px;
+	/*font-family: 'Open Sans Condensed', sans-serif !important;*/
+	color: #000;
+}
+.ei-title h4, .ei-title h4 a {
+	font-size: 20px;
+	line-height: 50px;
+	/*font-family: 'Open Sans Condensed', sans-serif !important;*/
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	text-align: right
+}
+.ei-slider-thumbs {
+	height: 13px;
+	margin: -13px auto 0 !important;
+	position: relative;
+	list-style: none !important;
+	z-index: 1000;
+}
+.ei-slider-thumbs li {
+	position: relative;
+	float: left;
+	height: 100%;
+}
+.ei-slider-thumbs li.ei-slider-element {
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	height: 100%;
+	z-index: 10;
+	text-indent: -9000px;
+	background: #1e2529;
+}
+.ei-slider-thumbs li a {
+	display: block;
+	text-indent: -9000px;
+	background: #3B4348;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.3),  0px 1px 0px 1px rgba(255,255,255,0.5);
+	-moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.3),  0px 1px 0px 1px rgba(255,255,255,0.5);
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.3),  0px 1px 0px 1px rgba(255,255,255,0.5);
+	-webkit-transition: background 0.2s ease;
+	-moz-transition: background 0.2s ease;
+	-o-transition: background 0.2s ease;
+	-ms-transition: background 0.2s ease;
+	transition: background 0.2s ease;
+}
+.ei-slider-thumbs li a:hover {
+	background-color: #1e2529;
+}
+.ei-slider-thumbs li img {
+	position: absolute;
+	bottom: 50px;
+	opacity: 0;
+	z-index: 999;
+	max-width: 100%;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	-webkit-box-reflect: below 0px -webkit-gradient(  linear,  left top,  left bottom,  from(transparent),  color-stop(50%, transparent),  to(rgba(255,255,255,0.3))  );
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.ei-slider-thumbs li:hover img {
+	opacity: 1;
+	bottom: 13px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+ @media only screen and (min-width: 320px) and (max-width: 479px) {
+#os-phrases {
+	display: none;
+}
+.ei-slider-large {
+	width: 100%;
+	height: 100% !important;
+}
+.ei-slider {
+	width: 100% !important;
+	margin: 0;
+	height: 190px;
+}
+.ei-slider-loading {
+	width: 100% !important;
+}
+.ei-slider-large li {
+	width: 100%;
+	height: 100%;
+}
+.ei-title p {
+	display: none !important;
+	font-size: 12px;
+	text-align: left;
+}
+.ei-title h1, .ei-title h1 a {
+	padding-left: 20px;
+	text-align: left;
+}
+.ei-slider-large li img {
+	width: 100%;
+}
+.ei-title {
+	left: 0%;
+	top: 5%;
+	margin-right: 0%;
+	width: 90%;
+	right: 0;
+}
+.ei-title h2, .ei-title h2 a {
+	font-size: 18px;
+	line-height: inherit;
+}
+.ei-title h1, .ei-title h1 a {
+	font-size: 18px;
+	line-height: inherit;
+}
+.ei-title h3, .ei-title h3 a {
+	font-size: 15px;
+	line-height: inherit;
+}
+.ei-title .shop-btn {
+	background-size: 100px;
+	float: left;
+	margin-left: 20px;
+	font-size: 11px;
+	font-weight: bold;
+	height: 54px;
+	letter-spacing: 1px;
+	padding-top: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 110px;
+	margin-top: 10px;
+}
+.ei-title h2, .ei-title h3 {
+	text-align: left;
+	padding-left: 20px;
+}
+.ei-title h4, .ei-title h4 a {
+	text-align: left;
+	padding-left: 20px;
+}
+.ei-title h5 {
+	font-size: 13px;
+	padding-left: 20px;
+	text-align: left;
+}
+.ei-title h4, .ei-title h4 a {
+	line-height: inherit;
+	font-size: 15px;
+}
+.ei-title h6, .ei-title h6 a {
+	line-height: inherit;
+	font-size: 15px;
+	padding-left: 20px;
+	text-align: left;
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+#os-phrases {
+	display: none;
+}
+.ei-slider-large {
+	width: 100%;
+	height: 100% !important;
+}
+.ei-slider {
+	width: 100% !important;
+	margin: 0;
+	height: 240px;
+}
+.ei-slider-loading {
+	width: 100% !important;
+}
+.ei-slider-large li {
+	width: 100%;
+	height: 100%;
+}
+.ei-slider-large li img {
+	width: 100%;
+}
+.ei-title {
+	left: 0%;
+	top: 5%;
+	margin-right: 0%;
+	width: 60%;
+	right: 0;
+}
+.ei-title h2, .ei-title h2 a {
+	font-size: 18px;
+	line-height: inherit;
+}
+.ei-title h1, .ei-title h1 a {
+	font-size: 18px;
+	line-height: inherit;
+}
+.ei-title h3, .ei-title h3 a {
+	font-size: 15px;
+	line-height: inherit;
+}
+.ei-title .shop-btn {
+	background-size: 100px;
+	float: left;
+	margin-left: 20px;
+	font-size: 11px;
+	font-weight: bold;
+	height: 54px;
+	letter-spacing: 1px;
+	padding-top: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 110px;
+	margin-top: 10px;
+}
+.ei-title h2, .ei-title h3 {
+	text-align: left;
+	padding-left: 20px;
+}
+.ei-title h4, .ei-title h4 a {
+	text-align: left;
+	padding-left: 20px;
+}
+.ei-title h5 {
+	font-size: 13px;
+	padding-left: 20px;
+	text-align: left;
+}
+.ei-title h4, .ei-title h4 a {
+	line-height: inherit;
+	font-size: 15px;
+}
+.ei-title h6, .ei-title h6 a {
+	line-height: inherit;
+	font-size: 15px;
+	padding-left: 20px;
+	text-align: left;
+}
+}
+@media only screen and (min-width: 768px) and (max-width:991px) {
+.os-phrases h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	width: 60%;
+	overflow: hidden;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 18%;
+	letter-spacing: 1px;
+	text-align: center;
+}
+#os-phrases {
+	display: block;
+}
+.ei-slider-large {
+	width: 100%;
+	height: 100% !important;
+}
+.ei-slider {
+	width: 100% !important;
+	margin: 0;
+	height: 340px;
+}
+.ei-slider-loading {
+	width: 100% !important;
+}
+.ei-slider-large li {
+	width: 100%;
+	height: 100%;
+}
+.ei-slider-large li img {
+	width: 100%;
+}
+.ei-title {
+	left: 0%;
+	top: 5%;
+	margin-right: 0%;
+	width: 52%;
+	right: 0;
+}
+.ei-title h2, .ei-title h2 a {
+	font-size: 35px;
+	line-height: 38px;
+}
+.ei-title h1, .ei-title h1 a {
+	font-size: 30px;
+	line-height: 38px;
+}
+.ei-title h3, .ei-title h3 a {
+	font-size: 20px;
+	line-height: 35px;
+}
+.ei-title h5 {
+	font-size: 13px;
+}
+.ei-title h4, .ei-title h4 a {
+	line-height: 30px;
+	font-size: 15px;
+}
+.ei-title h6, .ei-title h6 a {
+	line-height: inherit;
+	font-size: 15px;
+	padding-left: 20px;
+}
+}
+ @media only screen and (min-width: 992px) and (max-width:1169px) {
+#os-phrases {
+	display: block;
+}
+.ei-slider-large {
+	width: 100%;
+	height: 100% !important;
+}
+.ei-slider {
+	width: 100% !important;
+	margin: 0;
+	height: 450px;
+}
+.ei-slider-loading {
+	width: 100% !important;
+}
+.ei-slider-large li {
+	width: 100%;
+	height: 100%;
+}
+.ei-slider-large li img {
+	width: 100%;
+}
+.ei-title {
+	left: 0%;
+	top: 5%;
+	margin-right: 0%;
+	width: 55%;
+	right: 0;
+}
+.ei-title h2, .ei-title h2 a {
+	line-height: inherit;
+}
+.ei-title h1, .ei-title h1 a {
+	line-height: inherit;
+}
+.ei-title h3, .ei-title h3 a {
+	line-height: inherit;
+}
+.ei-title h2, .ei-title h3 {
+}
+.ei-title h4, .ei-title h4 a {
+}
+.ei-title h5 {
+}
+.ei-title h4, .ei-title h4 a {
+	line-height: inherit;
+	font-size: 15px;
+}
+.ei-title h6, .ei-title h6 a {
+	line-height: inherit;
+	font-size: 15px;
+	padding-left: 20px;
+}
+}
+@media screen and (max-width: 830px) {
+.responsive .ei-title {
+	position: absolute;
+	right: 0px;
+	margin-right: 0px;
+	width: 100%;
+	text-align: center;
+	top: auto;
+	bottom: 10px;
+	background: #fff;
+	background: rgba(255,255,255,0.9);
+	padding: 5px 0;
+}
+.responsive .ei-title h2, .responsive .ei-title h3 {
+	text-align: center;
+}
+.responsive .ei-title h2 {
+	font-size: 20px !important;
+	line-height: 24px;
+}
+.responsive .ei-title h3 {
+	font-size: 30px !important;
+	line-height: 40px;
+}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+.responsive .slider.ei-slider {
+	margin-left: -20px;
+	margin-right: -20px;
+	width: auto !important;
+}
+}
