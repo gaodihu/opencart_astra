@@ -38,7 +38,7 @@
     <div id="content" class="<?php echo $class; ?> col-main"><?php echo $content_top; ?>
       <div class="page-title"><h2><?php echo $heading_title; ?></h2></div>
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-7">
           <div class="well">
             <h2><?php echo $text_new_customer; ?></h2>
             <p><strong><?php echo $text_register; ?></strong></p>
@@ -47,7 +47,7 @@
               <button class="button continue"><span><span><?php echo $button_continue; ?></span></span></button>
             </a></div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-5">
           <div class="well">
             <h2><?php echo $text_returning_customer; ?></h2>
             <p><strong><?php echo $text_i_am_returning_customer; ?></strong></p>
@@ -70,7 +70,7 @@
         </div>
       </div>
       </div>
-    <?php echo $column_right; ?></div>
+    <?php //echo $column_right; ?></div>
     </div><!-- main container -->
     <?php echo $content_bottom; ?>
 </div>

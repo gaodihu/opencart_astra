@@ -9512,12 +9512,12 @@ button.subscribe:before {
 	width: 50%;
 }
 .form-horizontal .control-label {
-	text-align: left;
+	/*text-align: left;*/
 }
 .form-control {
 	border-radius: 0px;
 	border: 1px #ddd solid;
-	background: #f0f0f0;
+	/*background: #f0f0f0;*/
 	box-shadow: none;
 }
 #button-coupon.button.btn {

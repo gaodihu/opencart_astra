@@ -19,6 +19,7 @@ public function preRender( $template_buffer, $template_name, &$data ) {
         $this->load->model('catalog/manufacturer');
         $this->load->model('tool/image');
 
+        /*
         $data['manufacturers'] = array();
 
         $results = $this->model_catalog_manufacturer->getManufacturers();
@@ -29,7 +30,8 @@ public function preRender( $template_buffer, $template_name, &$data ) {
                 'name'            => $result['name'],
                 'href'            => $this->url->link('product/manufacturer/info&manufacturer_id=' . $result['manufacturer_id'])
             );
-        } 
+        }
+        */
 
         // call parent method
         return parent::preRender( $template_buffer, $template_name, $data );

@@ -289,11 +289,13 @@
     <?php echo $entry_newsletter; ?></label>
 </div>
 <?php if ($shipping_required) { ?>
+<!--
 <div class="checkbox">
   <label>
     <input type="checkbox" name="shipping_address" value="1" checked="checked" />
     <?php echo $entry_shipping; ?></label>
 </div>
+-->
 <?php } ?>
 <?php if ($text_agree) { ?>
 <div class="buttons clearfix">
